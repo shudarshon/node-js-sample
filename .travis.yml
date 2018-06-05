@@ -1,8 +1,17 @@
 language: node_js
 node_js:
-  - "node"
+  - node
 before_install:
-  - "npm install -g npm"
+  - npm install -g npm
 install:
   - npm install
-  - npm start
+  #- npm start
+cache:
+  directories:
+    - node_modules
+notifications:
+  email:
+    recipients:
+      - sdrsn.chaki@gmail.com
+    on_success: always
+    on_failure: always
