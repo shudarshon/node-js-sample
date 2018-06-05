@@ -15,3 +15,8 @@ notifications:
       - sdrsn.chaki@gmail.com
     on_success: always
     on_failure: always
+  slack:
+    rooms:
+      - upskillable:NFfjbRNQAqsp6Yw6EHToWMgC#devops
+    on_success: always
+    on_failure: always
