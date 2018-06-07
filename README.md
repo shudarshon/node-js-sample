@@ -23,3 +23,15 @@ sudo docker run -p 5000:5000 -d node_app
 ```
 
 Your app should now be running on [localhost:5000](http://localhost:5000/).
+
+## Travis CI
+
+Install travis client and configure secrets.
+
+```sh
+sudo gem install travis
+cd /path/to/repository
+travis encrypt DEPLOY_HOST=X.X.X.X
+travis encrypt DEPLOY_PATH=/home/user/app
+travis encrypt DEPLOY_USER=user
+```
